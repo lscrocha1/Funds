@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  funds.web:
+    image: ${DOCKER_REGISTRY-}fundsweb
+    build:
+      context: .
+      dockerfile: Funds.Web/Dockerfile
